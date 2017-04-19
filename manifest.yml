@@ -1,0 +1,12 @@
+applications:
+- path: target/JavaCloudantApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: cadc-javacloudant-scaling-kz
+  host: cadc-javacloudant-scaling-kz
+  disk_quota: 1024M
+  services:
+  - cadc-javacloudant-scaling-kz-cloudantNoSQLDB
+  - Monitoring and Analytics-a3
+  - Auto-Scaling-sa
